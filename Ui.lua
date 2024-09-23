@@ -48,11 +48,11 @@ local redzlib = {
 		},
 		Rimuru = {
 			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0,0,0)),
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0,0,0)),
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0,0,0))
 			}),
-			["Color Hub 2"] = Color3.fromRGB(17,17,17),
+			["Color Hub 2"] = Color3.fromRGB(12,12,12),
 			["Color Stroke"] = Color3.fromRGB(0, 0, 0),
 			["Color Theme"] = Color3.fromRGB(127, 0, 255),
 			["Color Text"] = Color3.fromRGB(255, 255, 255),
