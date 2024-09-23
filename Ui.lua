@@ -1886,7 +1886,11 @@ function redzlib:MakeWindow(Configs)
 	MinimizeButton.Activated:Connect(Window.MinimizeBtn)
 	return Window
 end
-
+local RimuruSto = Instance.new("UIStroke", game:GetService("CoreGui")["redz Library V5"].Hub)
+RimuruSto.Color = Color3.fromRGB(148, 0, 211)
+RimuruSto.Thickness = 4
+RimuruSto.Transparency = 0.2
+game:GetService("TweenService"):Create(RimuruSto, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true), {Transparency = 0.3}):Play()
 return redzlib
 
 
