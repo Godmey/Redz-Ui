@@ -618,7 +618,14 @@ function redzlib:MakeWindow(Configs)
 	Make("Gradient", MainFrame, {
 		Rotation = 45
 	})MakeDrag(MainFrame)
-	
+
+local uiStroke = Instance.new("UIStroke", game:GetService("CoreGui")["redz Library V5"].Hub)
+uiStroke.Color = Color3.fromRGB(148, 0, 211)
+uiStroke.Thickness = 3
+uiStroke.Transparency = 0.3
+game:GetService("TweenService"):Create(uiStroke, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true), {Transparency = 0.6}):Play()
+
+
 	local MainCorner = Make("Corner", MainFrame)
 	
 	local Components = Create("Folder", MainFrame, {
