@@ -46,18 +46,18 @@ local redzlib = {
 			["Color Text"] = Color3.fromRGB(240, 240, 240),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
 		},
-		White = {
-    [" Hub 1"] = ColorSequence.new({
-        ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)),
-        ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 255, 255)),
-        ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))
-    }),
-    ["Color Hub 2"] = Color3.fromRGB(255, 255, 255),
-    ["Color Stroke"] = Color3.fromRGB(0, 0, 0),
-    ["Color Theme"] = Color3.fromRGB(0, 0, 0),
-    ["Color Text"] = Color3.fromRGB(0, 0, 0),
-    ["Color Dark Text"] = Color3.fromRGB(0, 0, 0)
-    }
+		Rimuru = {
+			["Color Hub 1"] = ColorSequence.new({
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)),
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))
+			}),
+			["Color Hub 2"] = Color3.fromRGB(20, 20, 20),
+			["Color Stroke"] = Color3.fromRGB(127, 0, 255),
+			["Color Theme"] = Color3.fromRGB(127, 0, 255),
+			["Color Text"] = Color3.fromRGB(240, 240, 240),
+			["Color Dark Text"] = Color3.fromRGB(255, 255, 255)
+		}
 	},
 	Info = {
 		Version = "1.1.0"
@@ -65,7 +65,7 @@ local redzlib = {
 	Save = {
 		UISize = {550, 380},
 		TabSize = 160,
-		Theme = "White"
+		Theme = "Rimuru"
 	},
 	Settings = {},
 	Connection = {},
@@ -1888,3 +1888,5 @@ function redzlib:MakeWindow(Configs)
 end
 
 return redzlib
+
+
